@@ -56,8 +56,8 @@ const destroy = (req, res) => {
     
     db.Example.findByIdAndDelete(req.params.id, (err, deletedExample) => {
         if (err) console.log('Error in example#destroy:', err);
-          res.sendStatus(200);
-          console.log(deletedExample);
+        res.sendStatus(200);
+        console.log(deletedExample);
     });
 };
 

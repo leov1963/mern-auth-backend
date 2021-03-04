@@ -3,6 +3,8 @@ require('dotenv').config()
 const express = require('express');
 const routes = require('./routes');
 const cors = require('cors')
+const passport = require('passport')
+require('./config/passport')(passport)
 
 // App Set up
 const app = express();

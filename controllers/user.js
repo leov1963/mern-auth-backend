@@ -87,7 +87,7 @@ const login = async (req, res) => {
 }
 
 // private
-const private = (req, res) => {
+const profile = (req, res) => {
     console.log('Inside/ Profile =====>');
     console.log(req.body)
     console.log("user =====>")
